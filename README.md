@@ -1,2 +1,2 @@
 # JS-learning
-self website
+This is to record my learning progress
