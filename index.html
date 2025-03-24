@@ -10,7 +10,18 @@
 
 <body>
     <h1>Hello,world</h1>
-    <img src="js学习小笔记/image.png">
+    <span>js中数据类型</span>
+    <img src="image.png" width="40%" height="20%">
+    <span><br>对象新属性申明语句：person.email='jolin@htomail.com'<br></span>
+
+    <p>对象解构赋值，从 person 对象中提取 firstName 和 lastName 属性，并分别赋值给两个新的常量 firstName 和 lastName。
+        这种语法允许你从对象中提取特定的属性，并直接将它们赋值给新的变量。在这个例子中，firstName 和 lastName 将分别被赋值为 "Joey"，"lin"
+        <br>// 直接在解构赋值时指定新的值
+        const { firstName: Joey, lastName: lin } = person;
+    </p>
+    <span>js中申明对象</span>
+    <img src="image1.png" width="40%" height="20%" alt="js中申明对象">
+    <img src="image2.png" width="40%" height="20%">
     <script src="index.js">
         //关注点分离
         //script写在body中让用户体验更好，不至于加载页面时一片空白，不容易出bug，写在body中浏览器优先渲染内容而非代码

@@ -1,3 +1,4 @@
+//学习资料https://www.bilibili.com/video/BV15L14y1a7or?spm_id_from=333.788.videopod.episodes&vd_source=29a644edf31ccb340789ff33bdae73e5&p=1
 console.log('Hello World');
 console.log('变量与变量类型')
 //var,let(value可以被修改),const不可以（数组是容器，其内容可变）？，这是变量类型
@@ -35,5 +36,54 @@ fruits.pop()//删除末尾元素
 console.log(Array.isArray(fruits))//得到ture，判断是否为数组
 fruits.indexOf('apple')//找索引
 
+//这是对象数组
+const todos = [
+    {
+      id: 1,
+      text: "Take out trash",
+      isCompleted: true,
+    },
+    {
+      id: 2,
+      text: "Meeting with boss",
+      isCompleted: true,
+    },
+    {
+      id: 3,
+      text: "Dentist appt",
+      isCompleted: false,
+    },
+  ];
+  
+  console.log(todos);
+  console.log(todos[1].text);
 
+//JSON格式，key是双引号
+//打印JSON格式
+//JSON中大括号保存对象：{ "键1": "值1", "键2": "值2" }
+//JSON中方括号保存数组：[ "值1", "值2", "值3" ]
+  const todoJSON =JSON.stringify(todos);
+  console.log(todoJSON);
 
+//js条件语句，==表示值相同，类型可以不同(比如字符串“10”与数字10)；===表示值与类型都相同； 
+//三元运算符，color = x>10 ? "red" : "blue", 条件为真时/条件为假时
+
+const x =10;
+const color = x>10?"red":"blue";
+switch(color){
+    case"red":
+    console.log("color is red");
+    break;
+    case"blue":
+    console.log("color is blue");
+    break;
+    default:
+    //哪种情况都不符合
+    console.log("color is Not red or blue");
+}
+
+//for循环和while循环
+for (let todo of todos){
+    console.log(todo);
+    console.log(todo.id);
+}
